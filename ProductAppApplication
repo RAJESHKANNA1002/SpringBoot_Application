@@ -1,0 +1,15 @@
+package edu.jsp.Product_app;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+//it is an Main Class Application we have to run this class 
+
+@SpringBootApplication
+public class ProductAppApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(ProductAppApplication.class, args);
+	}
+
+}
