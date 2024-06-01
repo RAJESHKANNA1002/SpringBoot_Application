@@ -1,0 +1,42 @@
+package edu.jsp.Product_app.dao;
+
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import org.springframework.stereotype.Repository;
+
+import edu.jsp.Product_app.dto.Product;
+import edu.jsp.Product_app.repository.ProductRepository;
+
+@Repository
+public class ProductDao {
+
+	@Autowired // sub class Object to inject
+	ProductRepository p1;
+
+	public Product saveProduct(Product p) {
+
+		// save method
+		return p1.save(p);
+	}
+
+	public Product fetchById(int id) {
+
+		Optional<Product> o = p1.findById(id);
+
+		if (o.isPresent()) {
+
+			return o.get();
+		}
+		return null;
+
+	}
+
+	public String deleteById(int id) {
+
+		p1.deleteById(id);
+
+		return "data Deleted";
+	}
+}
