@@ -1,0 +1,28 @@
+package edu.jsp.Product_app.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import edu.jsp.Product_app.dao.ProductDao;
+import edu.jsp.Product_app.dto.Product;
+
+@Service
+public class ProductService {
+
+	@Autowired
+	private ProductDao dao;
+
+	public Product saveProduct(Product p) {
+
+		return dao.saveProduct(p);
+	}
+	
+	public Product fetchById(int id) {
+		
+		return dao.fetchById(id);
+	}
+	
+	public String deleteById(int id) {
+		return dao.deleteById(id);
+	}
+}
