@@ -1,0 +1,15 @@
+package edu.jsp.Product_app.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import edu.jsp.Product_app.dto.Product;
+
+public interface ProductRepository extends JpaRepository<Product, Integer> {
+
+	// save(Product p)
+	// findbyint(int id)
+	// findAll()
+	// deleteByid(int id)
+	// Springboot create implementation class
+
+}
