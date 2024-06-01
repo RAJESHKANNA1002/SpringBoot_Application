@@ -9,3 +9,5 @@ The @Id annotation is inherited from javax.persistence.Id, indicating the member
 @GeneratedValue(strategy = GenerationType.IDENTITY)
 
 this Annotation is used to create id for an Object auto Creation
+
+Then we create Setter and Getter Method for all Variables
