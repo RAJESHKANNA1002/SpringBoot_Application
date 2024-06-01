@@ -17,9 +17,9 @@ project metadata {
 
 Add Some Dependencies{
 
-            1.Spring Web =
-            2.Spring data JPA
-            3.Spring DevTool=
+            1.Spring Web       =  Provide Tomcat Server and all
+            2.Spring data JPA  =  For Database Connectivity
+            3.Spring DevTool   =  Once Server has been Started they will be auto reload
             4.
 
 
